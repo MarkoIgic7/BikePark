@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/listItemLocations_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:text="5"
+            android:textSize="15sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/listItemLocations_profilePic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/baseline_share_location_24"
+            android:layout_toEndOf="@id/listItemLocations_ranking"
+            app:civ_border_color="#000000"
+            app:civ_border_width="0.5dp" />
+
+        <ImageView
+            android:id = "@+id/listItemLocations_profileIcon"
+            android:layout_width = "20dp"
+            android:layout_height = "20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/baseline_person_24"
+            android:layout_toEndOf="@id/listItemLocations_profilePic"
+            />
+
+        <TextView
+            android:id="@+id/listItemLocations_fullName"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/listItemLocations_profileIcon"
+            android:text="Full Name"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/listItemLocations_capacity"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/listItemLocations_fullName"
+            android:text="25/25"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

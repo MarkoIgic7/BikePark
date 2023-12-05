@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Mapa"
+        android:id = "@+id/map"
+        android:icon="@drawable/baseline_map_24"/>
+    <item android:title="Rang lista"
+        android:id  ="@+id/scoreboard"
+        android:icon="@drawable/baseline_leaderboard_24"/>
+    <item android:title="Stajalista"
+        android:id = "@+id/locations"
+        android:icon="@drawable/baseline_share_location_24" />
+    <item android:title="Profil"
+        android:id = "@+id/profile"
+        android:icon="@drawable/baseline_person_24"/>
+</menu>

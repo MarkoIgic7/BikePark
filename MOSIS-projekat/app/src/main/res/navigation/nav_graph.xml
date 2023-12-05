@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_map">
+
+    <fragment
+        android:id="@+id/fragment_map"
+        android:name="com.example.mosis_projekat.MapFragment"
+        android:label="Map Fragment"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_map_to_addSpot"
+            app:destination="@id/fragment_addSpot">
+        </action>
+
+        <action
+            android:id="@+id/action_map_to_scoreboard"
+            app:destination="@id/fragment_scoreboard">
+        </action>
+
+        <action
+            android:id="@+id/action_map_to_locations"
+            app:destination="@id/fragment_locations">
+        </action>
+        <action
+            android:id="@+id/action_map_to_profile"
+            app:destination="@id/fragment_profile">
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.example.mosis_projekat.ProfileFragment"
+        android:label="Profile Fragment"
+        tools:layout="@layout/fragment_profile">
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_locations"
+        android:name="com.example.mosis_projekat.LocationsFragment"
+        android:label="Locations Fragment"
+        tools:layout="@layout/fragment_locations">
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_addSpot"
+        android:name="com.example.mosis_projekat.AddSpotFragment"
+        android:label="Add Spot Fragment"
+        tools:layout="@layout/fragment_add_spot">
+        <action
+            android:id="@+id/action_fragment_addSpot_to_fragment_map"
+            app:destination="@id/fragment_map" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_scoreboard"
+        android:name="com.example.mosis_projekat.ScoreboardFragment"
+        android:label="Scoreboard Fragment"
+        tools:layout="@layout/fragment_scoreboard">
+    </fragment>
+
+</navigation>
